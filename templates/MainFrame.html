@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body>
+    <script type="text/javascript">
+    </script>
+
+<style>
+
+body {background-color:#F3BE26}
+    h2,h3   {color: blue;}
+
+
+
+
+label
+{
+    display: inline-block;
+   
+    text-align: center;
+    
+
+}
+
+#invent
+{
+
+    margin-left: 130px;
+
+}
+#Forecasting
+{
+
+    margin-left: 130px;
+
+
+}
+
+</style>
+
+
+<h2 align=center> DATA and ANALYTICS</h2>
+<br>
+<br>
+
+<div align='center'>
+    <label> Database Connections : 
+    <a href="{{url_for('db_connections')}}"> <button type="button" class="btn btn-primary" > Go To Database Connections </button>
+        </a>
+    </label>    
+    <br>
+    <br>
+    
+
+    <label> Select Use Case :
+    <a href="{{url_for('next_page')}}"><button type="button" id='crm' class="btn btn-primary"> CRM </button>
+    </a>
+   
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary" id='Forecasting'>Forecasting </button>    
+    <br>
+    <br>
+
+    <button type="button" class="btn btn-primary" id='invent'> Inventory Management </button> 
+
+</label>
+
+</div>
+
+</body>
+</head>
+</html>

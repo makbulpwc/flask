@@ -1,0 +1,28 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>  
+
+<body>
+
+<p> {{query}}</p>
+
+  <table style="width:100%" border="1" id= 1 name='1'>
+    <caption>  The data </caption>
+    <tr >
+      <th>
+              {% for key, value in data.items() %} 
+              {% for r in value %}
+                <option value = {{r}}>{{ r }} </option>
+              {% endfor %}
+                
+        {% endfor %}
+      </th>
+   
+   
+    </tr>
+    </table>
+
+</body>
+
+</html>
